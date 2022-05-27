@@ -24,11 +24,11 @@ function MyTime() {
   const current = format(new Date(), formatStr);
   console.log(current);
 
-  const [myTime, setTime] = useState({ current });
+  const [time, setTime] = useState({ current });
 
   return (
     <div>
-      <WorldClock time={myTime} />
+      <WorldClock time={time} />
     </div>
   );
 }
