@@ -1,8 +1,8 @@
 import { formatInTimeZone } from "date-fns-tz";
 
-function WorldClock(time) {
+function WorldClock({ time }) {
   const usTime = formatInTimeZone(
-    time,
+    { time },
     "America/New_York",
     "yyyy-MM-dd HH:mm:ss zzz"
   );
