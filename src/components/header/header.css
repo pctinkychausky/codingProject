@@ -1,0 +1,30 @@
+.headerSearch {
+  height: 400px;
+}
+
+#header-image {
+  opacity: 0.8;
+}
+
+.title {
+  color: white;
+}
+
+.header-container {
+  position: absolute;
+  margin-top: -53%;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 60px;
+  text-align: left;
+  padding-left: 30px;
+  color: white;
+}
+
+.search-control-master-container {
+  background-color: #02122c;
+  height: 250px;
+  margin-top: -1.5%;
+}
