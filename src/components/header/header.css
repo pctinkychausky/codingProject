@@ -1,65 +1,71 @@
 .headerSearch {
-  height: 400px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .background-image-container {
-  position: relative;
-  /* z-index: -1; */
-  /* position: fixed; */
-  /* background-size: cover; */
   width: 100vw;
-  height: 85vh;
-  overflow: hidden;
-  background-position: 50% 50%;
-}
-
-#header-image {
-  width: 100%;
-
+  height: 90vh;
+  background-image: url(https://www.zestcarrental.com/images/home/banner/one.1603980200.jpg);
   background-size: cover;
-}
-
-.search-control-master-container {
-  background-color: #02122c;
-  height: 350px;
-  width: 670px;
-
-  z-index: 999;
-}
-
-.search-control-inner-container {
-  background-color: #02122c;
-  height: 313px;
-  width: 640px;
-}
-
-.title {
-  color: white;
-}
-
-.header-container {
-  z-index: 990;
-}
-
-.headerSearch {
-  margin: 0;
-  padding: 0;
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: -1;
 }
 
 .header-master-container {
   display: flex;
-  position: absolute;
+  position: relative;
+  margin-top: -52rem;
   width: 100vw;
-  height: 50vh;
+  /* height: 70vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+
+.header-container {
+  width: 55%;
 }
 
 .header-title {
-  font-size: 60px;
+  font-size: 3rem;
   text-align: center;
   padding-left: 30px;
+  color: white;
+}
+
+.second {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.search-control-master-container {
+  background-color: #02122c;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.search-control-inner-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  justify-content: flex-start;
+  align-content: space-around;
+  padding: 2rem 1.5rem;
+  text-align: left;
+}
+
+.headerSearchInput {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.title {
   color: white;
 }

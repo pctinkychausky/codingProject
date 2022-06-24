@@ -15,7 +15,7 @@ import MuiAlert, { AlertProps } from "@mui/material/Alert";
 import "./navbar.css";
 import { display } from "@mui/system";
 
-function narbar() {
+function Narbar() {
   const theme = createTheme({
     palette: {
       primary: {
@@ -167,4 +167,4 @@ function narbar() {
   );
 }
 
-export default narbar;
+export default Narbar;
