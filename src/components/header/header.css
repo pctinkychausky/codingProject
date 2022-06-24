@@ -69,3 +69,14 @@
 .title {
   color: white;
 }
+
+.search-control-bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+
+.search-button {
+  z-index: 10;
+}

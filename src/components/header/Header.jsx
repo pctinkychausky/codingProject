@@ -2,6 +2,8 @@ import React from "react";
 import "./header.css";
 import BasicDatePicker from "./BasicDatePicker/BasicDatePicker";
 import Checkbox from "@mui/material/Checkbox";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 function Header() {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -43,7 +45,13 @@ function Header() {
                     <Checkbox {...label} defaultChecked />
                     Driver aged between 25-75
                   </div>
-                  <div className="search-button"></div>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    className="search-button"
+                  >
+                    Search
+                  </Button>
                 </div>
               </div>
             </div>
