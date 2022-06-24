@@ -9,7 +9,11 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import HotelOutlinedIcon from "@mui/icons-material/HotelOutlined";
 import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
 import ReactCountryFlag from "react-country-flag";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert, { AlertProps } from "@mui/material/Alert";
 import "./navbar.css";
+import { display } from "@mui/system";
 
 function narbar() {
   const theme = createTheme({
@@ -77,19 +81,86 @@ function narbar() {
               </Typography>
             </Toolbar>
             <div style={styles}>
-              <Stack direction="row" spacing={2}>
-                <Button variant="contained" startIcon={<HotelOutlinedIcon />}>
-                  Hotels
-                </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<DirectionsCarFilledOutlinedIcon />}
-                >
-                  Car Hire
-                </Button>
+              <Stack
+                direction="row"
+                sx={{ display: "flex", justifyContent: "space-between" }}
+              >
+                <Stack direction="row" spacing={2}>
+                  <Button variant="contained" startIcon={<HotelOutlinedIcon />}>
+                    Hotels
+                  </Button>
+                  <Button
+                    variant="contained"
+                    startIcon={<DirectionsCarFilledOutlinedIcon />}
+                  >
+                    Car Hire
+                  </Button>
+                </Stack>
+                <Typography color="primary">
+                  <Box sx={{ fontWeight: "bold" }}>
+                    Need help? Call: 01362 852288 | Open today until 5pm UK time
+                  </Box>
+                </Typography>
               </Stack>
             </div>
           </AppBar>
+          <Stack spacing={1}>
+            <Button
+              color="primary"
+              variant="contained"
+              sx={{
+                height: 70,
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  width: "50%",
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <CheckCircleOutlineIcon />
+                  <Typography display="inline">Free Cancellation</Typography>
+                </Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <CheckCircleOutlineIcon />
+                  <Typography display="inline">Excess Protection</Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <CheckCircleOutlineIcon />
+                  <Typography display="inline">Fair Fuel Policy</Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <CheckCircleOutlineIcon />
+
+                  <Typography display="inline">24/7 Support</Typography>
+                </Box>
+              </Box>
+            </Button>
+          </Stack>
         </ThemeProvider>
       </Box>
     </>
