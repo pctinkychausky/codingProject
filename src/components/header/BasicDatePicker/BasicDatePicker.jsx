@@ -5,6 +5,7 @@ import { DateRange } from "react-date-range";
 import { useState } from "react";
 import { format } from "date-fns";
 import { width } from "@mui/system";
+import "./basicDatePicker.css";
 
 function BasicDatePicker() {
   const [date, setDate] = useState([
@@ -22,14 +23,15 @@ function BasicDatePicker() {
 
   // document.getElementById("dateEle").value = inputDate;
 
-  const styles = { color: "white" };
-  const dateRangeStyles = {
-    position: "relative",
-  };
   return (
     <>
-      {/* <input id="dateEle" type="text" value=""></input> */}
-      <span style={styles}>{inputDate}</span>
+      <input
+        id="dateEle"
+        type="text"
+        value=""
+        placeholder={inputDate}
+        className="DateSearchInput"
+      />
       <DateRange
         editableDateInputs={true}
         onChange={(item) => setDate([item.selection])}

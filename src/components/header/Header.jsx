@@ -21,22 +21,26 @@ function Header() {
             </div>
             <div className="search-control-master-container">
               <div className="search-control-inner-container">
-                <div className="search-control-location-container">
-                  <div className="search-Control-title title">
-                    Pick-up Location:
+                <div className="input-container">
+                  <div className="search-control-location-container">
+                    <div className="search-Control-title title">
+                      Pick-up Location:
+                    </div>
+                    <div className="search-Control-input">
+                      <input
+                        type="text"
+                        placeholder="Enter a city or airport"
+                        className="headerSearchInput"
+                      />
+                    </div>
                   </div>
-                  <div className="search-Control-input">
-                    <input
-                      type="text"
-                      placeholder="Enter a city or airport"
-                      className="headerSearchInput"
-                    />
-                  </div>
-                </div>
-                <div className="search-control-date-container">
-                  <div className="search-Control-title title">Pickup Date:</div>
-                  <div className="search-Control-input">
-                    <BasicDatePicker />
+                  <div className="search-control-date-container">
+                    <div className="search-Control-title title">
+                      Pickup and Return Date:
+                    </div>
+                    <div className="search-Control-input">
+                      <BasicDatePicker />
+                    </div>
                   </div>
                 </div>
 

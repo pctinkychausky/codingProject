@@ -6,7 +6,7 @@
 
 .background-image-container {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background-image: url(https://www.zestcarrental.com/images/home/banner/one.1603980200.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 }
 
 .header-container {
-  width: 55%;
+  width: 35%;
 }
 
 .header-title {
@@ -46,8 +46,12 @@
 
 .search-control-master-container {
   background-color: #02122c;
-  height: 60vh;
+  height: 600px;
   border-radius: 10px;
+  position: relative;
+}
+
+.input-container {
 }
 
 .search-control-inner-container {
