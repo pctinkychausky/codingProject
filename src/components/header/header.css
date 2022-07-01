@@ -2,11 +2,16 @@
   font-size: 12px;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  justify-content: center;
 }
 
 .background-image-container {
   width: 100vw;
-  height: 100vh;
+  height: 110%;
+  position: absolute;
+
   background-image: url(https://www.zestcarrental.com/images/home/banner/one.1603980200.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,19 +20,15 @@
 }
 
 .header-master-container {
-  display: flex;
   position: relative;
-  margin-top: -52rem;
-  width: 100vw;
-  /* height: 70vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 5%;
+
+  width: 800px;
+
   z-index: 1;
 }
 
 .header-container {
-  width: 35%;
 }
 
 .header-title {
@@ -46,9 +47,9 @@
 
 .search-control-master-container {
   background-color: #02122c;
-  height: 600px;
+  height: 100%;
   border-radius: 10px;
-  position: relative;
+  /* position: relative; */
 }
 
 .input-container {
