@@ -4,10 +4,11 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { useState } from "react";
 import { format } from "date-fns";
-import { width } from "@mui/system";
 import "./basicDatePicker.css";
 
 function BasicDatePicker() {
+  const [openDate, setOpenDate] = useState(false);
+
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -26,18 +27,21 @@ function BasicDatePicker() {
   return (
     <>
       <input
+        onClick={() => setOpenDate(!openDate)}
         id="dateEle"
         type="text"
         value=""
         placeholder={inputDate}
         className="DateSearchInput"
       />
-      <DateRange
-        editableDateInputs={true}
-        onChange={(item) => setDate([item.selection])}
-        moveRangeOnFirstSelection={false}
-        ranges={date}
-      />
+      {openDate && (
+        <DateRange
+          editableDateInputs={true}
+          onChange={(item) => setDate([item.selection])}
+          moveRangeOnFirstSelection={false}
+          ranges={date}
+        />
+      )}
     </>
   );
 }

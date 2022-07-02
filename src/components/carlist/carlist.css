@@ -1,0 +1,100 @@
+.Container {
+  display: grid;
+  height: 400px;
+  width: 60%;
+  grid-template-areas:
+    "carName carName carName sidebar-top"
+    "carImage policy1 extra sidebar-bottom"
+    "carImage policy2 extra sidebar-bottom"
+    "carImage policy3 extra sidebar-bottom"
+    "carImage policy4 extra sidebar-bottom";
+  grid-template-columns: 1.1fr 1fr 1fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-inline: 20%;
+  margin-block: 50px;
+}
+
+#carName {
+  background-color: white;
+  color: #2d294b;
+  grid-area: carName;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px 0 0 0;
+}
+
+#carName > h3 {
+}
+
+/* #carName > h3::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+  padding-top: 0;
+  padding-left: 0;
+  width: 5px;
+  background-color: #2d294b;
+} */
+
+#image {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 0 0 0 8px;
+}
+
+#carImage {
+  background-color: white;
+  grid-area: carImage;
+  border: 1px solid #e1e1e1;
+  border-radius: 0 0 0 8px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  #carImage {
+    max-width: 75%;
+  }
+}
+
+#sidebar-top {
+  background-color: #2d294b;
+  grid-area: sidebar-top;
+  border-radius: 0 8px 0 0;
+}
+
+#sidebar-bottom {
+  background-color: #57536f;
+  grid-area: sidebar-bottom;
+  border-radius: 0 0 8px 0;
+}
+
+#policy1 {
+  background-color: white;
+  grid-area: policy1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#policy2 {
+  background-color: white;
+  grid-area: policy2;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#policy3 {
+  background-color: white;
+  grid-area: policy3;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#policy4 {
+  background-color: white;
+  grid-area: policy4;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#extra {
+  background-color: white;
+  grid-area: extra;
+  border: 1px solid #e1e1e1;
+}
