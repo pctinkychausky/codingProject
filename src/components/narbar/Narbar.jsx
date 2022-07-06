@@ -126,7 +126,12 @@ function Narbar() {
                   }}
                 >
                   <CheckCircleOutlineIcon />
-                  <Typography display="inline">Free Cancellation</Typography>
+                  <Typography
+                    sx={{ flexGrow: 0, fontWeight: 500 }}
+                    display="inline"
+                  >
+                    Free Cancellation
+                  </Typography>
                 </Box>
                 <Box
                   sx={{
@@ -135,7 +140,12 @@ function Narbar() {
                   }}
                 >
                   <CheckCircleOutlineIcon />
-                  <Typography display="inline">Excess Protection</Typography>
+                  <Typography
+                    sx={{ flexGrow: 0, fontWeight: 500 }}
+                    display="inline"
+                  >
+                    Excess Protection
+                  </Typography>
                 </Box>
 
                 <Box
@@ -145,7 +155,12 @@ function Narbar() {
                   }}
                 >
                   <CheckCircleOutlineIcon />
-                  <Typography display="inline">Fair Fuel Policy</Typography>
+                  <Typography
+                    sx={{ flexGrow: 0, fontWeight: 500 }}
+                    display="inline"
+                  >
+                    Fair Fuel Policy
+                  </Typography>
                 </Box>
 
                 <Box
@@ -156,7 +171,12 @@ function Narbar() {
                 >
                   <CheckCircleOutlineIcon />
 
-                  <Typography display="inline">24/7 Support</Typography>
+                  <Typography
+                    sx={{ flexGrow: 0, fontWeight: 500 }}
+                    display="inline"
+                  >
+                    24/7 Support
+                  </Typography>
                 </Box>
               </Box>
             </Button>

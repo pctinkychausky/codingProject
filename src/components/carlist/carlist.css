@@ -1,6 +1,10 @@
-.Container {
+.master-container {
+  background-color: #f4f3f3;
+}
+
+.CarListContainer {
   display: grid;
-  height: 400px;
+  height: 100%;
   width: 60%;
   grid-template-areas:
     "carName carName carName sidebar-top"
@@ -14,27 +18,106 @@
   margin-block: 50px;
 }
 
-#carName {
+.ClearSans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #2d294b;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.LeagueSpartan {
+  font-family: "League Spartan", sans-serif;
+  color: #2d294b;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.header-bar {
   background-color: white;
+  z-index: 2;
   color: #2d294b;
   grid-area: carName;
   border: 1px solid #e1e1e1;
   border-radius: 8px 0 0 0;
-}
-
-#carName > h3 {
-}
-
-/* #carName > h3::before {
-  content: "";
-  position: absolute;
   height: 100%;
-  z-index: 9;
-  padding-top: 0;
-  padding-left: 0;
-  width: 5px;
-  background-color: #2d294b;
-} */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.policy {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding-top: 10px;
+}
+
+.header-bar > h3 {
+  margin-block: 0;
+}
+
+#dollar-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-bar {
+  padding-inline-end: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 17rem;
+}
+
+#sidebar-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 28px;
+}
+
+#sidebar-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.booking-email {
+  padding: 5px;
+  background-color: #18a969;
+  color: #fff;
+
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.booking-click {
+  background-color: #2fec87;
+  padding: 17px 25px 13px 25px;
+  border: none;
+  border-radius: 5px;
+  font-family: "League Spartan", Arial, Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 0 10px 0;
+}
 
 #image {
   object-fit: cover;
@@ -97,4 +180,22 @@
   background-color: white;
   grid-area: extra;
   border: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.OnlyWithZest-top {
+  list-style: none;
+  text-align: left;
+  padding-right: 5px;
+  line-height: 22px;
+  text-indent: -32px;
+  margin-left: 20px;
+}
+
+.car-name {
+  margin-left: 25px;
+  padding-top: 8px;
 }

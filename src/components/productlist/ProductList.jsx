@@ -1,10 +1,6 @@
 import React from "react";
-import data from "../data/date.json";
-import { nanoid } from "nanoid";
 
 import CarList from "../carlist/CarList";
-
-let carID = nanoid();
 
 function ProductList() {
   return (

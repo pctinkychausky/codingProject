@@ -38,7 +38,7 @@ function Header() {
                     <div className="search-Control-title title">
                       Pickup and Return Date:
                     </div>
-                    <div className="search-Control-input">
+                    <div className="search-control-input">
                       <BasicDatePicker />
                     </div>
                   </div>
