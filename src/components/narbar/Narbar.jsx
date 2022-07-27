@@ -14,6 +14,7 @@ import Snackbar from "@mui/material/Snackbar";
 import MuiAlert, { AlertProps } from "@mui/material/Alert";
 import "./navbar.css";
 import { display } from "@mui/system";
+import { NavLink } from "react-router-dom";
 
 function Narbar() {
   const theme = createTheme({
@@ -52,14 +53,16 @@ function Narbar() {
                 mx: -3,
               }}
             >
-              <Typography
-                color="primary"
-                variant="h3"
-                component="div"
-                sx={{ flexGrow: 0, fontWeight: 500 }}
-              >
-                Rental.com
-              </Typography>
+              <NavLink to="/">
+                <Typography
+                  color="primary"
+                  variant="h3"
+                  component="div"
+                  sx={{ flexGrow: 0, fontWeight: 500 }}
+                >
+                  Rental.com
+                </Typography>{" "}
+              </NavLink>
 
               <Typography
                 sx={{

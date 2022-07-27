@@ -1,16 +1,19 @@
 import React from "react";
 import "./carlist.css";
-import data from "../data/date.json";
 import { nanoid } from "nanoid";
 import StarIcon from "@mui/icons-material/Star";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import { useContext } from "react";
+import { CarsContext } from "../context/cars.Context";
 
 function CarList() {
+  const { filteredCars } = useContext(CarsContext);
+
   return (
     <>
       <div className="master-container">
         <br></br>
-        {data.map((entry) => (
+        {filteredCars.map((entry) => (
           <React.Fragment key={nanoid()}>
             <div className="CarListContainer">
               <header className="header-bar LeagueSpartan">
